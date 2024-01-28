@@ -3,24 +3,21 @@ using namespace std;
 class A
 {
     public:
-    void showA()
+    void show()
     {
-        cout << "This is class A -root \n";
+        cout  << "i am in class a"
     }
+   
 };
 
 class B:public A
 {
-    public:
-    void show()
-    {
-        cout << "This is class B";
-    }
+   public:
 };
 
 int main()
 {
     A h1;
-
+   
     h1.showA();
 }

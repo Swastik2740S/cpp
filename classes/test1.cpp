@@ -1,65 +1,51 @@
-#include <iostream>
-#include <string>
+// In a zoo simulation, you are tasked with designing classes for different animals. Implement a
+// base class Animal with attributes like name and age. Create derived classes for specific
+// animals, such as Lion, Elephant, and Monkey, inheriting from the Animal class. Include specific
+// behaviors for each animal.
+
+#include<bits/stdc++.h>
+#include<string.h>
+#include<iostream>
 using namespace std;
-// Base class Animal
-class Animal
-{
-protected:
-    string name;
+
+class Animal{
+    public:
+    char name;
     int age;
+};
 
-public:
-    Animal(const string &_name, int _age) : name(_name), age(_age) {}
-
-    void displayInfo() const
-    {
-        cout << "Name: " << name << endl;
-        cout << "Age: " << age << endl;
+class Lion: public Animal{
+    public:
+    void displaylion(){
+    cout << "Lion roars";
+    cout << endl;
     }
 };
 
-// Derived class Lion
-class Lion : public Animal
-{
-public:
-    Lion(const string &_name, int _age) : Animal(_name, _age) {}
-
-    void roar() const
-    {
-        cout << "The lion roars loudly." <<endl;
+class elephent: public Animal{
+    public:
+    void displayelephent(){
+    cout << "Elephent is big";
+    cout << endl;
     }
 };
 
-// Derived class Elephant
-class Elephant : public Animal
-{
-public:
-    Elephant(const string &_name, int _age) : Animal(_name, _age) {}
-
-    void trumpet() const
-    {
-        cout << "The elephant trumpets with its trunk." << endl;
+class monkey: public Animal{
+    public:
+    void displaymonkey(){
+    cout << "Monkay is jatin";
+    cout << endl;
     }
 };
 
-// Derived class Monkey
-class Monkey : public Animal
-{
-public:
-    Monkey(const string &_name, int _age) : Animal(_name, _age) {}
-
-    void swing() const
-    {
-        cout << "The monkey swings from branch to branch." << endl;
-    }
-};
-
-// Test case
 int main()
 {
-    Lion simba("Simba", 5);
-    simba.displayInfo();
-    simba.roar();
+    monkey m;
+    m.displaymonkey();
+    elephent e;
+    e.displayelephent();
+    Lion l;
+    l.displaylion();
 
-    return 0;
-}
+
+} 

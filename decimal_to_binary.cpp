@@ -1,6 +1,6 @@
 #include<iostream>
 #include<math.h>
-//not working in vs code only 10 and above
+////////////////////////////////////////////not working in vs code only 10 and above/////////////////////////////////////////////
 using namespace std;
 int main()
 {

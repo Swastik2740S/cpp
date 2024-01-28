@@ -8,7 +8,7 @@ bool search(int arr[],int n,int key)
     {
         cout << "Index is:"<< i<<endl;
        return 1;
-    }
+    } 
    }
    return 0;
 }

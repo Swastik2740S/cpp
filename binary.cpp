@@ -19,6 +19,7 @@ int main()
         n=n>>1;
         i++;
     }
-    cout << "Answer is:" <<ans<<endl;
+    
+    cout << "Answer is:" <<ans+1<<endl;
     cout << count;
 }

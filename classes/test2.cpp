@@ -1,3 +1,9 @@
+// In an online shopping application, customers can add items to their shopping cart. Implement a
+// class ShoppingCart with a method addItem that adds items to the cart. If the customer attempts
+// to add an item with a negative quantity or an invalid product code, throw appropriate exceptions
+// (NegativeQuantityException or InvalidProductCodeExceptionz). Handle these exceptions and
+// display error messages.
+
 #include <iostream>
 #include <stdexcept>
 #include <string>

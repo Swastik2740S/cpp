@@ -1,30 +1,19 @@
-
-#include <iostream>
-#include <string>
-#include <cctype>
-
-int main() {
-    std::string input;
-    std::cout << "Enter a string: ";
-    std::getline(std::cin, input);
-
-    std::string result;
-    bool inWord = false;
-
-    for (char c : input) {
-        if (std::isalpha(c)) {
-            if (!inWord) {
-                result += c;
-                inWord = true;
-            } else {
-                result += '#';
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string n;
+    string vow="aeiouAEIOU";
+    int vowels=0;
+    cout<<"enter the string: ";
+    getline(cin,n);
+    for(int i=0;n[i]!='\0';i++){
+        for(int v=0;v<=vow.length();v++){
+            if(n[i]==vow[v]){
+                vowels++;
             }
-        } else {
-            result += c;
-            inWord = false;
         }
+        cout << vowels;
+       
     }
-
-    std::cout << "Modified string: " << result << std::endl;
-    return 0;
 }
